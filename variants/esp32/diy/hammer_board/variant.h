@@ -10,13 +10,13 @@
 // GPS
 #undef GPS_RX_PIN
 #undef GPS_TX_PIN
-#define GPS_RX_PIN 15
-#define GPS_TX_PIN 12
+#define GPS_RX_PIN 12
+#define GPS_TX_PIN 15
 #define GPS_UBLOX
 // Power and Button
 #define EXT_PWR_DETECT 4
-#define BUTTON_PIN 39
-#define SECOND_BUTTON_PIN 0
+#define BUTTON_PIN 0
+#undef SECOND_BUTTON_PIN
 #define ADC_CHANNEL ADC1_GPIO35_CHANNEL
 #define ADC_MULTIPLIER 1.85
 // LoRa (VSPI)
@@ -25,14 +25,14 @@
 #define LORA_MOSI 27
 #define LORA_CS 18
 #define LORA_DIO0 RADIOLIB_NC
-#define LORA_RESET 23
+#define LORA_RESET 17
 #define LORA_DIO1 33
 #define LORA_DIO2 32
 #define LORA_DIO3 RADIOLIB_NC
 #define SX126X_CS 18
 #define SX126X_DIO1 33
 #define SX126X_BUSY 32
-#define SX126X_RESET 23
+#define SX126X_RESET 17
 #define SX126X_RXEN 14
 #define SX126X_TXEN 13
 #define SX126X_DIO3_TCXO_VOLTAGE 1.8
